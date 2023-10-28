@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10px 0 10px;
+    height: 30vh;
+    width: 40%;
+    background-color: #303030;
+    border-radius: 10px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.profile-img {
+    height: 15vh;
+    border-radius: 50%;
+}
+
+.info {
+    display: table-column;
+    justify-content: center;
+    list-style-type: none;
+    color: #fff;
+}
+
+.info #name,
+#eamil,
+#phone,
+#edu,
+#year {
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .comtainer {}
+    .card {
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 50%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info {
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 20%;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .info {
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 40%;
+        width: 40%;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    .info {
+        overflow: auto;
+    }
+}
